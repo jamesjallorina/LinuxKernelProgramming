@@ -15,8 +15,11 @@
 #include <linux/kernel.h>		// Contains types, macros, functions for the kernel
 #include <linux/fs.h>			// Header for the linux file system support
 #include <asm/uaccess.h>		// Required for the copy to user function
+
+
 #define DEVICE_NAME "ebbchar"	// The device will appear at /dev/ebbchar using this value
 #define CLASS_NAME "ebb"		// The device class -- this is a character device driver
+
 
 MODULE_LICENSE("GPL");			// The license type -- this affects available functionality
 MODULE_AUTHOR("James Jallorina");	// The author -- visible when you use modinfo
